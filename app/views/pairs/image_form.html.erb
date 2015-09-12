@@ -1,0 +1,32 @@
+<aside class="callout">
+  <div class="text-vertical-center">
+    <h1>Upload your Images</h1>
+  </div>
+</aside>
+
+<div class="form" style="margin: 100px 100px 0;">
+<% if flash[:notice].present? %>
+  <h4 class="text-primary" style="margin-bottom: 50px"><%= flash[:notice] %></h4>
+<% end %>
+<% if flash[:alert].present? %>
+  <h4 class="text-danger" style="margin-bottom: 50px"><%= flash[:alert] %></h4>
+<% end %>
+<%= bootstrap_form_tag url: upload_pairs_path do |f| %>
+  <%# ここに二人の名前を入れる用のinput boxを作ってください %>
+  <%#= f.collection_select :sound, @ここにデータベースからレコードデータを全て取得してください@, :url, :created_at %>
+  <%# ここに二人の写真を入れる用のフィールドを作ってください %>
+  <%= f.submit 'Upload' %>
+<% end %>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <br>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; Your Website 2015</p>
+      </div>
+    </div>
+  </div>
+</footer>
