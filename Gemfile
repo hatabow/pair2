@@ -11,7 +11,6 @@ gem 'bootstrap_form'
 gem 'faraday'
 gem 'rmagick'
 gem 'twilio-ruby', '~> 4.2.1'
-
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
